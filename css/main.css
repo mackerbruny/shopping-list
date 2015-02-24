@@ -160,6 +160,12 @@ LIST AREA
 
 .checklist > li {
 	padding: 17px 16px;
+	overflow: hidden;
+}
+
+.checklist > li > p {
+	float: left;
+	margin-right: 41px;
 }
 
 li.enter-item {
@@ -178,8 +184,25 @@ li.checked-item {
 	background-color: #ccc;
 }
 
-li.checked-item {
+li.checked-item > p {
 	color: #666;
+}
+
+i {
+	font-size: 25px;
+	float: right;
+}
+
+i.fa-plus-circle {
+	color: #00a99d;
+}
+
+i.fa-check-circle {
+	color: #00a99d;
+}
+
+i.uncheck {
+	color: #d3421f;
 }
 
 .button-wrapper {
@@ -189,7 +212,6 @@ li.checked-item {
 }
 
 button {
-	margin-right: 16px;
 	text-shadow: none;
     border-style: none;
     line-height: 1.33;
@@ -201,6 +223,15 @@ button {
 	font-size: 22px;
 	color: #fff;
 	transition: background-color 0.25s ease;
+}
+
+button.new-list {
+	margin-right: 12px;
+	background-color: #00a99d;
+}
+
+button.edit-list {
+	background-color: #d3421f;
 }
 
 
