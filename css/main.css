@@ -171,9 +171,47 @@ LIST AREA
 	margin-right: 41px;
 }
 
-li.enter-item {
-	background-color: #a2dadb; 
+/*Input area styles*/
+
+.input-wrapper {
+	width: 100%;
+	background-color: #a2dadb;
 }
+
+/*remove input glow*/
+input:focus {
+  outline-color: transparent;
+  outline-style: none;
+}
+
+input.enter-item {
+	background-color: #a2dadb;
+	padding: 17px 16px;
+	border: none;
+	color: #fff;
+	font-family: 'Raleway', sans-serif; 
+	font-weight: 400;
+	font-size: 22px;
+	width: 87%;
+}
+
+*::-webkit-input-placeholder {
+    color: #fff;
+}
+*:-moz-placeholder {
+    /* FF 4-18 */
+    color: #fff;
+}
+*::-moz-placeholder {
+    /* FF 19+ */
+    color: #fff;
+}
+*:-ms-input-placeholder {
+    /* IE 10+ */
+    color: #fff;
+}
+
+/*END input are styles*/
 
 li.enter-item > p {
 	color: #fff;
@@ -199,6 +237,7 @@ i {
 
 i.fa-plus-circle {
 	color: #00a99d;
+	margin: 17px 16px 17px 0;
 }
 
 i.fa-plus-circle:hover,
