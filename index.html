@@ -8,6 +8,8 @@
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<link href='http://fonts.googleapis.com/css?family=Raleway:400,900' rel='stylesheet' type='text/css'>
 	<link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
+	<script src="http://code.jquery.com/jquery.min.js"></script>
+	<script src="js/app.js"></script>
 </head>
 <body>
 	<header>
@@ -28,14 +30,10 @@
 		<section class="list-area">
 			<div class="input-wrapper">
 				<input class="enter-item" type="text" name="add-items" autocomplete="off" placeholder="Enter new item">
-				<i class="fa fa-plus-circle"></i>
+				<i class="fa fa-plus-circle add-button"></i>
+				<p id="error">&#42;Please enter an item</p>
 			</div>
 			<ul class="checklist">
-				</li>
-				<li class="item">
-					<p>Item 1</p>
-					<i class="fa fa-check-circle"></i>
-				</li>
 				<li class="checked-item">
 					<p>Checked item</p>
 					<i class="fa fa-check-circle uncheck"></i>

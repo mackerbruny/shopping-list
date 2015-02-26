@@ -85,7 +85,6 @@ header,
 
 header {
 	width: 100%;
-	margin-bottom: 25px;
 }
 
 .top-header {
@@ -149,7 +148,7 @@ LIST AREA
 
 .list-wrapper {
 	max-width: 830px;
-	margin: 0 auto;
+	margin: 25px auto;
 	padding: 0 16px;
 }
 
@@ -211,10 +210,23 @@ input.enter-item {
     color: #fff;
 }
 
+p#error {
+	margin-left: 16px;
+	padding-bottom: 16px;
+	font-size: 16px;
+	color: #d3421f; 
+	display: none;
+}
+
 /*END input are styles*/
 
 li.enter-item > p {
 	color: #fff;
+}
+
+li.item,
+li.checked-item {
+	display: none;
 }
 
 li.item {
@@ -259,7 +271,7 @@ i.uncheck:hover {
 
 .button-wrapper {
 	text-align: center;
-	margin-top: 16px;
+	margin: 16px 0;
 	width: 100%;
 }
 
