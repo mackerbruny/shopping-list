@@ -178,7 +178,7 @@ LIST AREA
 }
 
 /*remove input glow*/
-input:focus {
+:focus {
   outline-color: transparent;
   outline-style: none;
 }
@@ -224,20 +224,16 @@ li.enter-item > p {
 	color: #fff;
 }
 
-li.item,
-li.checked-item {
-	display: none;
-}
-
 li.item {
 	border-bottom: solid 1px #ccc;
 }
 
-li.checked-item {
+.checked-item {
 	background-color: #ccc;
+	border-bottom: solid 1px #fff;
 }
 
-li.checked-item > p {
+.checked-item > p {
 	color: #666;
 }
 

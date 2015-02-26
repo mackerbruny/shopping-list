@@ -1,6 +1,7 @@
 $(document).ready(function() {
 
 	// use enter to add list items
+	
 	$('.enter-item').keyup(function(event){
 		if(event.keyCode == 13) {
 			event.preventDefault();
@@ -9,6 +10,7 @@ $(document).ready(function() {
 	});	
 
 	// Validate text box, then add value in text box to list, show list item
+	
 	$('.add-button').click(function() {
 		if( $('input.enter-item').val().trim().length == 0 ) {
 				// alert("put something here");
@@ -23,6 +25,21 @@ $(document).ready(function() {
 
 		};	
 	
+	});
+
+	// Change li and p class when user clicks Done button and add uncheck button	
+
+	$('ul').on('click', '.check-button', function() {
+		$(this).closest('li').toggleClass('checked-item');
+		$(this).closest('p').toggleClass('checked-item');
+		$(this).closest('li').append('<i class="fa fa-check-circle uncheck"></i>');
+		$(this).remove();
+	});
+
+	/*Clears all items on list*/
+	$(document).on("click", ".new-list", function(){
+	    $("ul").empty();
+	    submissions = 0;
 	});
 
 });
