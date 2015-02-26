@@ -30,13 +30,14 @@ $(document).ready(function() {
 	// Change li and p class when user clicks Done button and add uncheck button	
 
 	$('ul').on('click', '.check-button', function() {
-		$(this).closest('li').toggleClass('checked-item');
+		$(this).closest('li').toggleClass('checked-item').css("border-bottom","solid 1px #fff");
 		$(this).closest('p').toggleClass('checked-item');
 		$(this).closest('li').append('<i class="fa fa-check-circle uncheck"></i>');
 		$(this).remove();
 	});
 
-	/*Clears all items on list*/
+	//Clears all items on list
+
 	$(document).on("click", ".new-list", function(){
 	    $("ul").empty();
 	    submissions = 0;
