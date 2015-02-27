@@ -30,9 +30,16 @@ $(document).ready(function() {
 	// Change li and p class when user clicks Done button and add uncheck button	
 
 	$('ul').on('click', '.check-button', function() {
-		$(this).closest('li').toggleClass('checked-item').css("border-bottom","solid 1px #fff");
-		$(this).closest('p').toggleClass('checked-item');
+		$(this).closest('li').toggleClass('checked-item');
 		$(this).closest('li').append('<i class="fa fa-check-circle uncheck"></i>');
+		$(this).remove();
+	});
+
+	// Change checked li back to unchecked
+
+	$('ul').on('click', '.uncheck', function() {
+		$(this).closest('li').toggleClass('checked-item');
+		$(this).closest('li').append('<i class="fa fa-check-circle check-button"></i>');
 		$(this).remove();
 	});
 
@@ -44,3 +51,5 @@ $(document).ready(function() {
 	});
 
 });
+
+

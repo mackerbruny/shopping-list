@@ -224,12 +224,14 @@ li.enter-item > p {
 	color: #fff;
 }
 
-li.item {
+.item {
+	background-color: #fff;
 	border-bottom: solid 1px #ccc;
 }
 
 .checked-item {
 	background-color: #ccc;
+	border-bottom: solid 1px #fff;
 }
 
 .checked-item > p {
