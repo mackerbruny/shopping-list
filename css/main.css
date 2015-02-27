@@ -258,11 +258,16 @@ i.fa-check-circle {
 	color: #00a99d;
 }
 
-i.uncheck {
+i.uncheck,
+i.minus-button {
 	color: #d3421f;
 }
 
 i.uncheck:hover {
+	color: #a93519;
+}
+
+i.minus-button:hover {
 	color: #a93519;
 }
 
@@ -300,6 +305,15 @@ button.edit-list {
 }
 
 button.edit-list:hover {
+	background-color: #a93519;
+}
+
+button.done {
+	display: none;
+	background-color: #d3421f;
+}
+
+button.done:hover {
 	background-color: #a93519;
 }
 

@@ -43,6 +43,36 @@ $(document).ready(function() {
 		$(this).remove();
 	});
 
+	// Edit items
+
+	$(document).on("click", ".edit-list", function(){
+	    $('.check-button').hide();
+	    $('.uncheck').hide();
+	    $('.input-wrapper').hide();
+	    $('.new-list').hide();
+	    $('ul').children().append('<i class="fa fa-minus-circle minus-button"></i>');
+	    $('.edit-list').hide();
+	    $('.done').show();
+	});
+
+	// Done editing items
+
+	$(document).on("click", ".done", function(){
+	    $('.check-button').show();
+	    $('.uncheck').show();
+	    $('.input-wrapper').show();
+	    $('.new-list').show();
+	    $('.minus-button').remove();
+	    $('.edit-list').show();
+	    $('.done').hide();
+	});
+
+	// Remove items from list
+
+	$('ul').on('click', '.minus-button', function() {
+		$(this).closest('li').remove();
+	});
+
 	//Clears all items on list
 
 	$(document).on("click", ".new-list", function(){
