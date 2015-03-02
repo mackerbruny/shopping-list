@@ -160,12 +160,12 @@ LIST AREA
 	background-color: #fff;
 }
 
-.checklist > li {
+#checklist > li {
 	padding: 17px 16px;
 	overflow: hidden;
 }
 
-.checklist > li > p {
+#checklist > li > p {
 	float: left;
 	margin-right: 41px;
 }
@@ -291,12 +291,12 @@ button {
 	transition: background-color 0.25s ease;
 }
 
-button.new-list {
+button.clear-list {
 	margin-right: 12px;
 	background-color: #00a99d;
 }
 
-button.new-list:hover {
+button.clear-list:hover {
 	background-color: #038273;
 }
 

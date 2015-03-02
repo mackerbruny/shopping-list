@@ -49,10 +49,11 @@ $(document).ready(function() {
 	    $('.check-button').hide();
 	    $('.uncheck').hide();
 	    $('.input-wrapper').hide();
-	    $('.new-list').hide();
+	    $('.clear-list').hide();
 	    $('ul').children().append('<i class="fa fa-minus-circle minus-button"></i>');
 	    $('.edit-list').hide();
 	    $('.done').show();
+	    $('.list-area').css("border-top", "solid 64px #d3421f");
 	});
 
 	// Done editing items
@@ -61,10 +62,11 @@ $(document).ready(function() {
 	    $('.check-button').show();
 	    $('.uncheck').show();
 	    $('.input-wrapper').show();
-	    $('.new-list').show();
+	    $('.clear-list').show();
 	    $('.minus-button').remove();
 	    $('.edit-list').show();
 	    $('.done').hide();
+	    $('.list-area').css("border-top", "solid 4px #999");
 	});
 
 	// Remove items from list
@@ -75,10 +77,14 @@ $(document).ready(function() {
 
 	//Clears all items on list
 
-	$(document).on("click", ".new-list", function(){
+	$(document).on("click", ".clear-list", function(){
 	    $("ul").empty();
 	    submissions = 0;
 	});
+
+	// Sortable list
+
+	$('#checklist').sortable({ axis: "y" });
 
 });
 

@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="font-awesome-4.1.0/css/font-awesome.min.css">
 	<script src="http://code.jquery.com/jquery.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
 </head>
 <body>
 	<header>
@@ -33,14 +34,14 @@
 				<i class="fa fa-plus-circle add-button"></i>
 				<p id="error">&#42;Please enter an item</p>
 			</div>
-			<ul class="checklist">
+			<ul id="checklist" class="ui-sortable">
 				<!-- <li class="checked-item">
 					<p>Checked item</p>
 					<i class="fa fa-check-circle uncheck"></i>
 				</li> -->
 			</ul>
 			<div class="button-wrapper">
-				<button class="new-list">New list</button>
+				<button class="clear-list">Clear list</button>
 				<button class="edit-list">Edit list</button>
 				<button class="done">Done</button>
 			</div>
